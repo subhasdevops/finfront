@@ -99,17 +99,7 @@ class LoginForm extends Component {
     return (
       <div className="login-form-container">
         <form className="form-container" onSubmit={this.submitForm}>
-          <img
-            src="https://res.cloudinary.com/dzfehrv3n/image/upload/v1625912174/Group_7420_q3pjjp.jpg"
-            className="login-website-logo-desktop-image"
-            alt="website logo"
-          />
-          <img
-            src="https://res.cloudinary.com/dmylnzu2b/image/upload/v1626201176/Kitchen%20App%20/Rectangle_1457_luftlr.png"
-            alt="kitchen-mobile"
-            className="kitchen-mobile-image"
-          />
-          <h1 className="font-color">Tasty Kitchens</h1>
+          <h1 className="font-color">FinancePeer</h1>
           <h1>Sign in</h1>
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
