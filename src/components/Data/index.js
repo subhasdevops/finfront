@@ -41,8 +41,8 @@ class Data extends Component {
       <>
         <Header />
         <div className="data-cont">
-          {data === [] ? (
-            <h1>Please upload data</h1>
+          {data.length === 0 ? (
+            <h1 className="head">Please upload data</h1>
           ) : (
             <ul>{data.map((each) => this.renderData(each))}</ul>
           )}
