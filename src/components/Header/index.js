@@ -23,7 +23,7 @@ const Header = (props) => {
           <li>Home</li>
         </Link>
         <Link to="/data" className="nav-link2">
-          <li>data</li>
+          <li>Data</li>
         </Link>
         <button
           type="button"
