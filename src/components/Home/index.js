@@ -4,21 +4,15 @@ import "./index.css";
 
 class Home extends Component {
   state = {
-    // Initially, no file is selected
     selectedFile: null,
     data: [],
   };
 
-  // On file select (from the pop up)
   onFileChange = (event) => {
-    // Update the state
     this.setState({ selectedFile: event.target.files[0] });
   };
 
-  // On file upload (click the upload button)
   onFileUpload = async () => {
-    // Create an object of formData
-
     const url = "https://finaw.herokuapp.com/books";
 
     const options = {
@@ -36,7 +30,7 @@ class Home extends Component {
     if (this.state.selectedFile) {
       return (
         <div>
-          <h2>File Details:</h2>
+          <h1>File Details:</h1>
 
           <p>File Name: {this.state.selectedFile.name}</p>
 
@@ -59,7 +53,7 @@ class Home extends Component {
         <Header />
         <div className="bg-cont">
           <h1>FinancePeer</h1>
-          <h3>File Upload using React!</h3>
+          <h1>File Upload using React!</h1>
           {this.state.data === [] ? "" : <p>{this.state.data.message}</p>}
           <div>
             <input type="file" onChange={this.onFileChange} accept=".json" />
